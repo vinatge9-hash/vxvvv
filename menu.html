@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+  <meta charset='UTF-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+  <title>Café Ember - Menu</title>
+  <meta name='description' content='Explore our coffee menu featuring espresso drinks, pour-overs, and pastries.'>
+  <script src='https://cdn.tailwindcss.com'></script>
+</head>
+<body class='font-sans antialiased'>
+  <header class='bg-white shadow'>
+    <nav class='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between'>
+      <a href='index.html' class='text-2xl font-bold text-gray-800'>Café Ember</a>
+      <div class='hidden md:block'>
+        <div class='ml-10 flex items-baseline space-x-4'>
+          <a href='index.html' class='text-gray-700 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium'>Home</a>
+          <a href='about.html' class='text-gray-700 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium'>About</a>
+          <a href='menu.html' class='text-gray-700 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium'>Menu</a>
+          <a href='contact.html' class='text-gray-700 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium'>Contact</a>
+        </div>
+      </div>
+      <div class='md:hidden'>
+        <button class='text-gray-700'>Menu</button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class='relative min-h-screen bg-gray-100'>
+      <div class='absolute inset-0 bg-cover' style='background-image: url(https://pixabay.com/get/gddcbc57209e112209077476a97a320461cb44539b9389c8ed9de40c962bc75815cfc2b06d2af92de18b37260e2ff09d81f74d93fec24409cff3e9138875d548a_640.jpg);'></div>
+      <div class='relative z-10 max-w-7xl mx-auto px-4 py-16 text-center'>
+        <h1 class='text-4xl md:text-5xl font-bold mb-4' style='font-family: Inter, system-ui, Arial, sans-serif;'>Menu</h1>
+        <p class='mb-8 text-gray-700' style='font-family: Inter, system-ui, Arial, sans-serif;'>Seasonal selections and classic favorites crafted with care.</p>
+      </div>
+    </section>
+
+    <section class='py-12'>
+      <div class='max-w-7xl mx-auto px-4'>
+        <div class='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6'>
+          <!-- Item 1 -->
+          <article class='bg-white rounded-lg shadow p-4 hover:shadow-lg transition duration-300'>
+            <img src='https://images.pexels.com/photos/32488184/pexels-photo-32488184.jpeg?auto=compress&cs=tinysrgb&h=650&w=940' alt='Espresso shot with crema' class='w-full h-40 object-cover rounded-md'>
+            <div class='mt-2 flex justify-between items-center'>
+              <span class='font-semibold' style='font-family: Inter, system-ui, Arial, sans-serif;'>Espresso</span>
+              <span class='text-gray-600'>$3.50</span>
+            </div>
+          </article>
+          <!-- Item 2 -->
+          <article class='bg-white rounded-lg shadow p-4 hover:shadow-lg transition duration-300'>
+            <img src='https://pixabay.com/get/g8fc85e53ea014f13d8905e29f29db16f2b49746322ad9c826d78578f2a31f97d203c315eb56554fa6a6b7784491d7a99b156d3828ddaf92b4cac4c4d837c0488_640.jpg' alt='Latte with latte art' class='w-full h-40 object-cover rounded-md'>
+            <div class='mt-2 flex justify-between items-center'>
+              <span class='font-semibold' style='font-family: Inter, system-ui, Arial, sans-serif;'>Latte</span>
+              <span class='text-gray-600'>$4.75</span>
+            </div>
+          </article>
+          <!-- Item 3 -->
+          <article class='bg-white rounded-lg shadow p-4 hover:shadow-lg transition duration-300'>
+            <img src='https://images.pexels.com/photos/8926661/pexels-photo-8926661.jpeg?auto=compress&cs=tinysrgb&h=650&w=940' alt='Pour-over coffee' class='w-full h-40 object-cover rounded-md'>
+            <div class='mt-2 flex justify-between items-center'>
+              <span class='font-semibold' style='font-family: Inter, system-ui, Arial, sans-serif;'>Pour-over</span>
+              <span class='text-gray-600'>$4.25</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class='bg-black text-white py-6'>
+    <div class='max-w-7xl mx-auto px-4 text-sm flex items-center justify-between'>
+      <span>© 2025 Café Ember. All rights reserved.</span>
+      <span>Open daily 7am–7pm</span>
+    </div>
+  </footer>
+</body>
+</html>
